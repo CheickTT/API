@@ -14,7 +14,9 @@ jobs:
 
       - name: Install tools
         run: python -m pip install --upgrade pip pytest
-        run: python -m pip install --upgrade pip pyyoutube
+
+      - name: Install pyyoutube
+        run: python -m pip install --upgrade pip python-youtube
 
       - name: Test with unittest
         run: |
