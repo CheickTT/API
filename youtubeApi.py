@@ -24,8 +24,9 @@ dictionnary with the title, url and creation date of the channel"""
 
 def get_info(channel):
     channel = channel['snippet']
-    return {'title': channel['title'], 'customUrl': channel['customUrl'], /
-            'pubDate': channel['publishedAt']}
+    dictio = {'title': channel['title'], 'customUrl': channel['customUrl']}
+    dictio['pubDate'] = channel['publishedAt']
+    return dictio
 
 
 """This function store the information in a database
