@@ -1,4 +1,3 @@
-import requests
 from pyyoutube import Api
 import sqlalchemy as db
 import pandas as pd
