@@ -18,6 +18,9 @@ jobs:
       - name: Install pyyoutube
         run: python -m pip install --upgrade pip python-youtube
 
+      - name: Install SQLAlchemy
+        run: python -m pip install --upgrade pip SQLAlchemy
+
       - name: Test with unittest
         run: |
           python3 -m unittest youtubeTest.py
