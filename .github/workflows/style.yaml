@@ -1,4 +1,4 @@
-name: Check Style
+name: Style and Testing
 on: push
 
 jobs:
@@ -17,3 +17,7 @@ jobs:
 
       - name: Check Style
         run: pycodestyle --first *.py
+
+      - name: Test with pytest
+        run: |
+          python3 -m unittest apiTest.py
